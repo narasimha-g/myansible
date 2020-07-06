@@ -4,6 +4,7 @@
 [web_servers]
 172.31.10.7
 172.31.8.170
+172.31.1.65
 
 [application_servers]
 172.31.0.10
@@ -12,8 +13,3 @@
 [db_servers]
 172.31.0.10
 172.31.0.11
-
-[webserver:var]
-
-webserver_on_ubuntu:apache2
-webserver_on_linux:httpd
