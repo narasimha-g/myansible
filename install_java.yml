@@ -14,6 +14,6 @@
 
     - name: i want to install webserver on linux
       yum:
-       name: java-latest-openjdk
+       name: java-1.8.0-openjdk
        state: present 
       when: ansible_os_family=="RedHat"
