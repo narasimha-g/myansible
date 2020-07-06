@@ -2,3 +2,6 @@
  key: value
  webserver_on_ubuntu: apache2
  webserver_on_linux: httpd
+
+ my_java_on_ubuntu: default-jdk
+ my_java_on_linux: java-1.8.0-openjdk

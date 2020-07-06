@@ -8,12 +8,12 @@
 
     - name: i want to install java on ubuntu16.4
       apt:
-       name: default-jdk
+       name: "{{my_java_on_ubuntu}}"
        state: latest 
       when: ansible_os_family=="Debian"
 
     - name: i want to install webserver on linux
       yum:
-       name: java-1.8.0-openjdk
+       name: "{{my_java_on_linux}}"
        state: present 
       when: ansible_os_family=="RedHat"
