@@ -27,7 +27,7 @@
     - name: i want to install wget  on ubuntu16.4
       apt:
         name: wget 
-        state: latest 
+        state: present 
       when: ansible_os_family=="Debian"
 
 
