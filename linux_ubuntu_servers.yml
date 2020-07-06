@@ -8,7 +8,7 @@
 
     - name: i want to install webserver on ubuntu16.4
       apt:
-       name: "{{webserver_on_ubuntu:apache2}}"
+       name: "{{webserver_on_ubuntu}}"
        state: latest 
       when: ansible_os_family=="Debian"
 
@@ -21,7 +21,7 @@
 
     - name: i want to start service  on ubuntu16.4
       service:
-       name: "{{webserver_on_ubuntu:apache2}}"
+       name: "{{webserver_on_ubuntu}}"
        state: started
       when: ansible_os_family=="Debian"
 
