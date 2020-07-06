@@ -1,2 +1,4 @@
-webserver_on_ubuntu:apache2
-webserver_on_linux:httpd
+---
+    key:value
+    webserver_on_ubuntu:apache2
+    webserver_on_linux:httpd
