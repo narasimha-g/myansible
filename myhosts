@@ -15,5 +15,5 @@
 
 [webserver:var]
 
-webserveronubuntu=apache2
-webserveronlinux=httpd
+webserver_on_ubuntu:apache2
+webserver_on_linux:httpd

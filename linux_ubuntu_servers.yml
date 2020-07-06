@@ -8,26 +8,26 @@
 
     - name: i want to install webserver on ubuntu16.4
       apt:
-       name: "{{webserveronubuntu}}"
+       name: "{{webserver_on_ubuntu:apache2}}"
        state: latest 
       when: ansible_os_family=="Debian"
 
 
     - name: i want to install webserver on linux
       yum:
-       name: "{{webserveronlinux}}"
+       name: "{{webserver_on_linux}}"
        state: present 
       when: ansible_os_family=="RedHat"
 
     - name: i want to start service  on ubuntu16.4
       service:
-       name: "{{webserveronapache2}}"
+       name: "{{webserver_on_ubuntu:apache2}}"
        state: started
       when: ansible_os_family=="Debian"
 
 
     - name: i want to start service  on linux
       service:
-       name: "{{webserveronlinux}}"
+       name: "{{webserver_on_linux}}"
        state: started 
       when: ansible_os_family=="RedHat"
