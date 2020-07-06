@@ -13,7 +13,7 @@
 172.31.0.10
 172.31.0.11
 
-[groupvar]
+[webserver:var]
 
-webserver_on_ubuntu:apache2
-webserver_on_linux:httpd
+webserveronubuntu:apache2
+webserveronlinux:httpd
