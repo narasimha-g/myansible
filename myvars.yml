@@ -1,8 +1,12 @@
 --- 
  - hosts: web_servers
+   become: yes
    vars:
     x: 50
     my_name: "narasimha_chowdary"
+   vars_prompt:
+    name: y
+    prompt: Enter the value of y
    tasks:
    - debug:
       msg:
