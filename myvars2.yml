@@ -1,0 +1,19 @@
+--- 
+ - hosts: web_servers
+   become: yes
+   gather_facts: yes
+   vars:
+    my_key1: devops
+    my_key2: aws 
+    my_key3: linux 
+
+    tasks:
+     - name: i want to display my_key1
+       debug:
+       msg: "{{my_key1}}"
+
+     - name: i want to display my_key1
+       debug:
+       msg: "{{my_key1}}"
+      
+        
