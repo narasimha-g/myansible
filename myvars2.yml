@@ -1,5 +1,5 @@
 --- 
- - hosts: 172.31.1.65
+ - hosts: web_servers
    become: yes
    gather_facts: no 
    vars:
