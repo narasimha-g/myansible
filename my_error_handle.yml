@@ -1,0 +1,8 @@
+--- 
+ - hosts: web_servers
+   become: yes
+   gather_facts: yes 
+   tasks:
+   - name: i want to exicute linux commands
+     command: hostname -f 
+     
