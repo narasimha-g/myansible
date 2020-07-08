@@ -10,4 +10,20 @@
    - name: i want to display my above task 
      debug: 
       msg: "{{myresult}}"
+
+   - name: i want to install git 
+     apt:
+      name: git 
+      state: present 
+     when: ansible_os_family=="Debian"
+   
+   - name: i want to install tree  
+     apt:
+      name: tree  
+      state: present 
+     when: ansible_os_family=="Debian"
+
+    
+       
+   
    
