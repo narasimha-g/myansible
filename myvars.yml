@@ -16,5 +16,5 @@
       msg:
        - "The x value is :{{x}}"
        - "The my name value is: {{my_name}}"
-       - "The value of y is :{{y}}"
+      # - "The value of y is :{{y}}"
        
