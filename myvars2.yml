@@ -15,5 +15,9 @@
    - name: i want to display my_key2
      debug:
       msg: "{{my_key2}}"
+
+   - name: i want to display os
+     debug:
+      msg: "{{os_family}}"
       
         
