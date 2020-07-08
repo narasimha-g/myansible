@@ -7,7 +7,7 @@
     my_key2: aws 
     my_key3: linux 
 
-    tasks:
+   tasks:
      - name: i want to display my_key1
        debug:
        msg: "{{my_key1}}"
