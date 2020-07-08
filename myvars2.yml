@@ -18,6 +18,6 @@
 
    - name: i want to display os
      debug:
-      msg: "{{ansible_os_family}}"
+       msg: "{{ansible_os_family}}"
       
         
