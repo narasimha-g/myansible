@@ -5,12 +5,16 @@
     x: 50
     my_name: "narasimha_chowdary"
    vars_prompt:
-    name: y
-    prompt: Enter the value of y
-    private: no
+    - name: user_name
+      prompt: Enter your user name
+      private: no
+    - name: user_passwd
+      prompt: Enter your passwd
+      private: yes
    tasks:
    - debug:
       msg:
        - "The x value is :{{x}}"
        - "The my name value is: {{my_name}}"
        - "The value of y is :{{y}}"
+       
