@@ -8,6 +8,6 @@
      register: myresult
 
    - name: i want to display my above task 
-     dibug: 
+     debug: 
       msg: "{{myresult}}"
    
