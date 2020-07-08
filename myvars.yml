@@ -19,4 +19,5 @@
        - "The x value is :{{x}}"
        - "The my name value is: {{my_name}}"
       # - "The value of y is :{{y}}"
+       - "The user name is: {{user_name}} and passwd is: {{user_passwd}}"
        
