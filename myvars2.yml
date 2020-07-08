@@ -8,12 +8,12 @@
     my_key3: linux 
 
    tasks:
-     - name: i want to display my_key1
-       debug:
-        msg: "{{my_key1}}"
+   - name: i want to display my_key1
+     debug:
+      msg: "{{my_key1}}"
 
-     - name: i want to display my_key2
-       debug:
-        msg: "{{my_key2}}"
+   - name: i want to display my_key2
+     debug:
+      msg: "{{my_key2}}"
       
         
