@@ -5,6 +5,8 @@
     x: 50
     my_name: "narasimha_chowdary"
    vars_prompt:
+   #- name: y
+    #  prompt: Enter the value y 
     - name: user_name
       prompt: Enter your user name
       private: no
