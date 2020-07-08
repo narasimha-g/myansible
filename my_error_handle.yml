@@ -7,7 +7,7 @@
      command: hostname -f 
      register: myresult
 
-   - name: i want to display above task 
+   - name: i want to display my above task 
      dibug: 
       msg: "{{myresult}}"
    
