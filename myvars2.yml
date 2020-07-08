@@ -19,6 +19,6 @@
    - name: i want to display os
      debug:
        msg: "{{ansible_os_family}}"
-       ignore_errors: yes
+     ignore_errors: yes
       
         
