@@ -1,7 +1,7 @@
 --- 
  - hosts: web_servers
-   become: yes
-   #gather_facts: no 
+   #become: yes
+   gather_facts: yes 
    vars:
     my_key1: devops
     my_key2: aws 
