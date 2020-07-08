@@ -1,0 +1,12 @@
+
+--- 
+ - hosts: web_servers
+   vars:
+    x: 30
+    my_name: "narasimha"
+   tasks:
+   - debug:
+      msg:
+       - "The x value is :{{x}}"
+       - "The my name value is {{my_name}}"
+
