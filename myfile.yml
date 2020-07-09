@@ -5,5 +5,5 @@
    tasks: 
    - name: i want to create file on web_servers
      file: 
-      path: file1 
+      path: /home/narasimha/file1 
       state: touch
