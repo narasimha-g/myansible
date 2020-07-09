@@ -3,3 +3,7 @@
    file: 
     path: /home/narasimha/file1 
     state: touch
+ - name: i want to create file on web_servers
+   file: 
+    path: /home/narasimha/file2
+    state: touch
