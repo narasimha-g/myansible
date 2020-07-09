@@ -8,7 +8,7 @@
     path: /home/narasimha/file2
     state: touch
 
- - name: i want to create file on web_servers
+ - name: i want to create directory  on web_servers
    file: 
     path: /home/narasimha/dir1
     state: directory 
