@@ -1,0 +1,8 @@
+--- 
+ hosts: web_servers
+ become: yes
+ gather_facts: yes 
+ tasks: 
+  - name: i want to create file on web_servers
+    file: /home/ubuntu/file1
+    path: file 
