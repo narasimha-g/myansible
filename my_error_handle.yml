@@ -15,15 +15,16 @@
      apt:
       name: git 
       state: present 
-    # when: ansible_os_family=="Debian"
-      when: myreult.stderr !=""
+      when: ansible_os_family == "Debian"
+      #when: myreult.stderr !=""
+      
 
    - name: i want to install tree  
      apt:
       name: tree  
       state: present 
-     #when: ansible_os_family=="Debian"
-      when: myreult.stderr ==""
+     when: ansible_os_family=="Debian"
+      #when: myreult.stderr ==""
 
     
        

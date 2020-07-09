@@ -1,0 +1,26 @@
+---
+ - hosts: web_servers
+   become: yes
+   gather_facts: yes
+   tasks:
+    - name: i want to ping my webserver nodes
+      ping:
+
+    - name: i want to install webserver on ubuntu16.4
+      apt:
+       name: "{{webserver_on_ubuntu}}"
+       state: latest 
+      when: ansible_os_family=="Debian"
+
+
+    - name: i want to install webserver on linux
+      yum:
+       name: "{{webserver_on_linux}}"
+       state: present 
+      when: ansible_os_family=="RedHat"
+
+    - name: i want to install webserver on ubuntu16.4
+      apt:
+       name: "{{webserver_on_ubuntu}}"
+       state: latest 
+      when: ansible_os_family=="Debian"
