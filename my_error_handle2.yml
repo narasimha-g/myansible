@@ -19,7 +19,13 @@
        state: present 
       when: ansible_os_family=="RedHat"
 
-    - name: i want to install webserver on ubuntu16.4
+    - name: i want to install git on ubuntu16.4
+      apt:
+       name: "{{webserver_on_ubuntu}}"
+       state: latest 
+      when: ansible_os_family=="Debian"
+
+    - name: i want to install tree on ubuntu16.4
       apt:
        name: "{{webserver_on_ubuntu}}"
        state: latest 
