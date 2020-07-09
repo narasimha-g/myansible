@@ -11,17 +11,18 @@
        name: apache2
        state: latest 
       when: ansible_os_family=="Debian"
+      notify: restartwebserver
 
     - name: i want to install webserver on linux
       yum:
        name: httpd 
        state: latest 
       when: ansible_os_family=="RedHat"
-
-    - name: i want to install webserver on ubuntu16.4
+   handlers:
+    - name: restartwebserver
       apt:
        name: apache2
        state: latest 
       when: ansible_os_family=="Debian"
- 
+   
       
