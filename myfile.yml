@@ -4,6 +4,7 @@
    gather_facts: yes 
    tasks: 
    - name: i want to create file on web_servers
-     file: 
-      path: /home/narasimha/file1 
-      state: touch
+  #   file: 
+  #    path: /home/narasimha/file1 
+   #   state: touch
+     include: file_include.yml
