@@ -21,10 +21,11 @@
 
     - name: i want to install git on ubuntu16.4
       apt:
-       name: "{{webserver_on_ubuntu}}"
+       nameeeee: "{{webserver_on_ubuntu}}"
        state: latest 
       when: ansible_os_family=="Debian"
-
+      ignore_errors: yes
+      
     - name: i want to install tree on ubuntu16.4
       apt:
        name: "{{webserver_on_ubuntu}}"
