@@ -6,4 +6,4 @@
    - name: i want to create file on web_servers
      file: 
       path: /home/ubuntu/file1 
-      
+      state: touch
